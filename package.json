@@ -11,17 +11,18 @@
     }
   ],
   "description": "poc for testing the es6 on the purpose of using it with adagio",
-  "dependencies": {
-  },
   "devDependencies": {
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-register": "^6.26.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
     "jshint": "latest",
     "mocha": "latest"
   },
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register ./tests/specs/**/*.js"
+    "test": "mocha --compilers js:babel-core/register ./tests/specs/**/*.js",
+    "browser-test": "webpack tests/**/*.js tests/browser/build/bundle.js"
   },
   "main": "./build/adagio.js"
 }
