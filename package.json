@@ -1,0 +1,27 @@
+{
+  "name": "adagio-poc-es6",
+  "version": "0.0.1",
+  "author": "Flat <hello@flat.io>",
+  "homepage": "https://flat.io",
+  "private": true,
+  "contributors": [
+    {
+      "name": "Cyril Coutelier",
+      "email": "cyril@flat.io"
+    }
+  ],
+  "description": "poc for testing the es6 on the purpose of using it with adagio",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.26.0",
+    "jshint": "latest",
+    "mocha": "latest"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register ./tests/specs/**/*.js"
+  },
+  "main": "./build/adagio.js"
+}
