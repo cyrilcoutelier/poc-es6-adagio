@@ -23,5 +23,9 @@
     "test": "mocha --compilers js:babel-core/register ./tests/specs/**/*.js",
     "browser-test": "webpack tests/**/*.js tests/browser/build/bundle.js"
   },
+  "browser": {
+    "./tests/utils/getDocument.js": "./tests/utils/getDocument.browser.js",
+    "./tests/utils/getElem.js": "./tests/utils/getElem.browser.js"
+  },
   "main": "./build/adagio.js"
 }

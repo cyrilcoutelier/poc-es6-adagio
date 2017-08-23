@@ -1,9 +1,8 @@
 // jshint module:true
-
-import jsdom from 'jsdom';
+// jshint browser:true
 
 const getDocument = function() {
-  return jsdom.jsdom();
+  return window.document;
 };
 
 export default getDocument;
