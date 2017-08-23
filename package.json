@@ -10,14 +10,17 @@
   }],
   "description": "poc for testing the es6 on the purpose of using it with adagio",
   "devDependencies": {
+    "async": "^2.5.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-register": "^6.26.0",
     "babelify": "^7.3.0",
     "browserify": "^14.4.0",
+    "jquery": "^3.2.1",
     "jsdom": "9.8.0",
     "jshint": "latest",
-    "mocha": "latest"
+    "mocha": "latest",
+    "opentype.js": "^0.6.0"
   },
   "scripts": {
     "test": "mocha --compilers js:babel-core/register ./tests/specs/**/*.js",
@@ -25,7 +28,9 @@
   },
   "browser": {
     "./tests/utils/getDocument.js": "./tests/utils/getDocument.browser.js",
-    "./tests/utils/getElem.js": "./tests/utils/getElem.browser.js"
+    "./tests/utils/getElem.js": "./tests/utils/getElem.browser.js",
+    "./tests/utils/loadFont.js": "./tests/utils/loadFont.browser.js",
+    "./tests/utils/loadDraftSvg.js": "./tests/utils/loadDraftSvg.browser.js"
   },
   "main": "./build/adagio.js"
 }
