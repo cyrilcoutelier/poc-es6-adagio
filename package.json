@@ -4,12 +4,10 @@
   "author": "Flat <hello@flat.io>",
   "homepage": "https://flat.io",
   "private": true,
-  "contributors": [
-    {
-      "name": "Cyril Coutelier",
-      "email": "cyril@flat.io"
-    }
-  ],
+  "contributors": [{
+    "name": "Cyril Coutelier",
+    "email": "cyril@flat.io"
+  }],
   "description": "poc for testing the es6 on the purpose of using it with adagio",
   "devDependencies": {
     "babel-polyfill": "^6.26.0",
