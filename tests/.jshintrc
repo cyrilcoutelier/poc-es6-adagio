@@ -6,5 +6,5 @@
   "trailing": true,
   "eqeqeq": true,
   "mocha": true,
-  "node": true
+  "esversion": 6
 }

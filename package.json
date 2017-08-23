@@ -15,6 +15,7 @@
     "babel-register": "^6.26.0",
     "babelify": "^7.3.0",
     "browserify": "^14.4.0",
+    "jsdom": "9.8.0",
     "jshint": "latest",
     "mocha": "latest"
   },
