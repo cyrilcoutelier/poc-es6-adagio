@@ -8,12 +8,11 @@ import adagioDocument from "../../../src/globals/adagioDocument";
 import getElem from "../../utils/getElem";
 import getDocument from "../../utils/getDocument";
 
-
 var document = getDocument();
 adagioDocument.setDocument(document);
 
-var divNode = null;
-var svg = null;
+let divNode = null;
+let svg = null;
 
 before(function () {
   if (process.browser) {
@@ -34,7 +33,6 @@ afterEach(function () {
 
 after(function () {
   divNode = null;
-  document = null;
 });
 
 it('simple test', function () {});

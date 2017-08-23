@@ -1,6 +1,6 @@
 // jshint module:true
 
-var FretType = {
+let FretType = {
   FRET0: 'fret0',
   FRET1: 'fret1',
   FRET2: 'fret2',
