@@ -2,7 +2,7 @@
 
 import jsdom from 'jsdom';
 
-const getDocument = function() {
+const getDocument = function () {
   return jsdom.jsdom();
 };
 

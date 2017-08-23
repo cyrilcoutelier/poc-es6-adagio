@@ -8,7 +8,7 @@ const svgUtils = {};
  * We need to specify the namespace in order to create valid svg tags.
  * See : http://stackoverflow.com/questions/8215021/create-svg-tag-with-javascript
  */
-svgUtils.createElement = function(tagName) {
+svgUtils.createElement = function (tagName) {
   const localDocument = adagioDocument.getDocument();
   const node = localDocument.createElementNS("http://www.w3.org/2000/svg", tagName);
   if (tagName === 'svg') {

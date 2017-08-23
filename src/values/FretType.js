@@ -26,7 +26,7 @@ FretType.values = [
   FretType.FRET9
 ];
 
-FretType.isValid = function(value) {
+FretType.isValid = function (value) {
   return FretType.values.includes(value);
 };
 

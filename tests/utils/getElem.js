@@ -1,6 +1,6 @@
 // jshint module:true
 
-const getElem = function() {
+const getElem = function () {
   throw new Error('Should not be called on node');
 };
 

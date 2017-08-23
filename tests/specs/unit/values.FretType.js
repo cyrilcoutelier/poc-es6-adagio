@@ -3,9 +3,9 @@
 import assert from "assert";
 import FretType from "../../../src/values/FretType";
 
-describe('Adagio.values.FretType', function() {
-  describe('isValid()', function() {
-    it('true', function() {
+describe('Adagio.values.FretType', function () {
+  describe('isValid()', function () {
+    it('true', function () {
       // Given
       var value = FretType.FRET0;
 
@@ -15,7 +15,7 @@ describe('Adagio.values.FretType', function() {
       // Then
       assert.strictEqual(result, true);
     });
-    it('true', function() {
+    it('true', function () {
       // Given
       var value = 'wrong value';
 

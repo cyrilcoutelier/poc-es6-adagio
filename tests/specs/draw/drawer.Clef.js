@@ -15,26 +15,26 @@ adagioDocument.setDocument(document);
 var divNode = null;
 var svg = null;
 
-before(function() {
+before(function () {
   if (process.browser) {
     divNode = getElem('drawer.Clef');
   }
 });
 
-beforeEach(function() {
+beforeEach(function () {
   svg = svgUtils.createElement('svg');
   if (process.browser) {
     divNode.appendChild(svg);
   }
 });
 
-afterEach(function() {
+afterEach(function () {
   svg = null;
 });
 
-after(function() {
+after(function () {
   divNode = null;
   document = null;
 });
 
-it('simple test', function() {});
+it('simple test', function () {});
